@@ -1,7 +1,7 @@
 import db from '../database/db-config.js';
 
 const findUser = () => {
-  return db('user').select('id', 'username')
+  return db('users').select('id', 'username')
 }
 
 const findById = id => {

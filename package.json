@@ -15,16 +15,18 @@
   "homepage": "https://github.com/drejohnson/webauth-i-challenge#readme",
   "scripts": {
     "start": "node index.mjs",
-    "server": "nodemon index.mjs",
+    "server": "nodemon -L index.mjs",
     "db:update": "knex migrate:latest",
     "db:undo": "knex migrate:rollback",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "connect-session-knex": "^1.5.0",
     "cors": "^2.8.5",
     "esm": "^3.2.25",
     "express": "^4.17.1",
+    "express-session": "^1.17.0",
     "helmet": "^3.21.2",
     "knex": "^0.20.4",
     "knex-cleaner": "^1.3.0",
